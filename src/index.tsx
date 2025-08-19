@@ -25,15 +25,18 @@ export const BarcodeCreatorView =
   UIManager.getViewManagerConfig(ComponentName) != null
     ? requireNativeComponent<BarcodeCreatorProps>(ComponentName)
     : () => {
-        throw new Error(LINKING_ERROR);
-      };
+      throw new Error(LINKING_ERROR);
+    };
+
 export const BarcodeFormat = {
   AZTEC: NativeModules.BarcodeCreatorViewManager.getConstants().AZTEC,
   CODE128: NativeModules.BarcodeCreatorViewManager.getConstants().CODE128,
   PDF417: NativeModules.BarcodeCreatorViewManager.getConstants().PDF417,
   QR: NativeModules.BarcodeCreatorViewManager.getConstants().QR,
   EAN13: NativeModules.BarcodeCreatorViewManager.getConstants().EAN13,
+  EAN8: NativeModules.BarcodeCreatorViewManager.getConstants().EAN8,
   UPCA: NativeModules.BarcodeCreatorViewManager.getConstants().UPCA,
+  UPCE: NativeModules.BarcodeCreatorViewManager.getConstants().UPCE,
 };
 
 export type { BarcodeCreatorProps };

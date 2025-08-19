@@ -24,6 +24,8 @@ public class BarcodeCreatorModule extends ReactContextBaseJavaModule {
       put("QR", BarcodeFormat.QR_CODE.name());
       put("EAN13", BarcodeFormat.EAN_13.name());
       put("UPCA", BarcodeFormat.UPC_A.name());
+      put("EAN8", BarcodeFormat.EAN_8.name());
+      put("UPCE", BarcodeFormat.UPC_E.name());
     }};
     return constants;
   }

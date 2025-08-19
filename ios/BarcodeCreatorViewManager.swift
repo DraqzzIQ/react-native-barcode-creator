@@ -12,7 +12,9 @@ class BarcodeCreatorViewManager: RCTViewManager {
                   "PDF417": "CIPDF417BarcodeGenerator",
                   "QR": "CIQRCodeGenerator",
                   "EAN13": "CIEANBarcodeGenerator",
-                  "UPCA": "CIEANBarcodeGenerator"
+                  "EAN8": "CIEANBarcodeGenerator",
+                  "UPCA": "CIEANBarcodeGenerator",
+                  "UPCE": "CIEANBarcodeGenerator"
           ]
       }
 
